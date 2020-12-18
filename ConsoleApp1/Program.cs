@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace HelloWorld
 {
-    class Program
+    class MainClass 
     {
-        static void Main(string[] args)
+        public static void Main(string[] agrs)
         {
-            Console.WriteLine("Hello, World");
+            //Console.WriteLine("[" + DateTime.Now + "] " + "Hello, " + name + "!");//
+
+            Console.WriteLine("Hello, enter you name:");
+            String name = Console.ReadLine();
+            //Console.WriteLine($"helo? {name}!";//
+            Console.WriteLine("[" + DateTime.Now + "] " + "Hello, " + name + "!"); //добавляет Дату и время + привет + имя
+            Console.ReadKey(); // ждать эникея пользователя.
         }
     }
 }
